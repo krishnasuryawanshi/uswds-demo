@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>USWDS Local Setup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- USWDS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.8.0/dist/css/uswds.min.css">
+</head>
+
+<body class="usa-site">
+
+    <!-- top banner text -->
+    <section class="usa-banner" aria-label="Official website of the United States government">
+        <div class="usa-accordion">
+            <header class="usa-banner__header">
+                <div class="usa-banner__inner">
+                    <div class="grid-col-auto">
+                        <img aria-hidden="true" class="usa-banner__header-flag" src="./assets/img/us_flag_small.png"
+                            alt="" />
+                    </div>
+                    <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                        <p class="usa-banner__header-text">
+                            An official website of the United States government
+                        </p>
+                        <p class="usa-banner__header-action">Here’s how you know</p>
+                    </div>
+                    <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false"
+                        aria-controls="gov-banner-default">
+                        <span class="usa-banner__button-text">Here’s how you know</span>
+                    </button>
+                </div>
+            </header>
+            <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+                <div class="grid-row grid-gap-lg">
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="./assets/img/icon-dot-gov.svg"
+                            role="img" alt="" aria-hidden="true" />
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Official websites use .gov</strong><br />A
+                                <strong>.gov</strong> website belongs to an official government
+                                organization in the United States.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="./assets/img/icon-https.svg" role="img"
+                            alt="" aria-hidden="true" />
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Secure .gov websites use HTTPS</strong><br />A
+                                <strong>lock</strong> (
+                                <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64"
+                                        viewBox="0 0 52 64" class="usa-banner__lock-image" role="img"
+                                        aria-labelledby="banner-lock-description-default" focusable="false">
+                                        <title id="banner-lock-title-default">Lock</title>
+                                        <desc id="banner-lock-description-default">Locked padlock icon</desc>
+                                        <path fill="#000000" fill-rule="evenodd"
+                                            d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                                    </svg> </span>) or <strong>https://</strong> means you’ve safely connected to
+                                the .gov website. Share sensitive information only on official,
+                                secure websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main nav section -->
+    <div class="usa-overlay"></div>
+    <header class="usa-header usa-header--extended">
+        <div class="usa-navbar">
+            <div class="usa-logo">
+                <em class="usa-logo__text"><a href="/" title="Project title">Project title</a></em>
+            </div>
+            <button type="button" class="usa-menu-btn">Menu</button>
+        </div>
+        <nav aria-label="Primary navigation" class="usa-nav">
+            <div class="usa-nav__inner">
+                <button type="button" class="usa-nav__close">
+                    <img src="./assets/img/usa-icons-bg/close--white.svg" role="img" alt="Close" />
+                </button>
+                <ul class="usa-nav__primary usa-accordion">
+                    <li class="usa-nav__primary-item">
+                        <button type="button" class="usa-accordion__button usa-nav__link usa-current"
+                            aria-expanded="false" aria-controls="extended-mega-nav-section-one">
+                            <span>Current section</span>
+                        </button>
+                        <div id="extended-mega-nav-section-one" class="usa-nav__submenu usa-megamenu">
+                            <div class="grid-row grid-gap-4">
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">A very long navigation link that goes onto
+                                                two
+                                                lines</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                        <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                            aria-controls="extended-mega-nav-section-two">
+                            <span>Section</span>
+                        </button>
+                        <div id="extended-mega-nav-section-two" class="usa-nav__submenu usa-megamenu">
+                            <div class="grid-row grid-gap-4">
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">A very long navigation link that goes onto
+                                                two
+                                                lines</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="usa-col">
+                                    <ul class="usa-nav__submenu-list">
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                        <li class="usa-nav__submenu-item">
+                                            <a href="javascript:void(0);">Navigation link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                        <a href="javascript:void(0);" class="usa-nav-link">Simple link</a>
+                    </li>
+                </ul>
+                <div class="usa-nav__secondary">
+                    <ul class="usa-nav__secondary-links"></ul>
+                    <section aria-label="Search component">
+                        <form class="usa-search usa-search--small" role="search">
+                            <label class="usa-sr-only" for="search-field">Search</label>
+                            <input class="usa-input" id="search-field" type="search" name="search" />
+                            <button class="usa-button" type="submit">
+                                <img src="./assets/img/usa-icons-bg/search--white.svg"
+                                    class="usa-search__submit-icon" alt="Search" />
+                            </button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="usa-hero bg-primary-lighter"
+            style="background-image: url('./assets/images/webp/bg-city-gov.webp');" aria-label="Introduction">
+            <div class="grid-container">
+                <div class="usa-hero__callout maxw-mobile-lg">
+                    <nav class="usa-breadcrumb bg-transparent" aria-label="Breadcrumbs">
+                        <ul class="usa-breadcrumb__list">
+                            <li class="usa-breadcrumb__list-item">
+                                <a href="./" class="usa-breadcrumb__link">
+                                    <span class="text-base-lightest hover:text-base-light">Home</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="margin-top-0 margin-bottom-0">
+                        Official Website of
+                    </p>
+                    <h1 class="usa-hero__heading margin-top-0">
+                        <span class="usa-hero__heading--alt">
+                            The City of RFPMart
+                        </span>
+                    </h1>
+                    <p>
+                        How can we help you today?
+                    </p>
+                    <form class="usa-search usa-search--small" role="search">
+                        <label class="usa-sr-only" for="search-field">Search</label>
+                        <input class="usa-input" id="search-field" type="search" name="search"
+                            island_form_infra_field_type="UNKNOWN"
+                            island_field_signature="search|search|search-field|||parsed|0">
+                        <button class="usa-button" type="submit">
+                            <img src="./assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon"
+                                alt="Search">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="usa-section grid-container">
+            <div class="grid-row grid-gap-4 flex-justify-center">
+                <div class="usa-card usa-card--header-first desktop:grid-col-5 tablet:grid-col-6 tablet:margin-0">
+                    <div class="usa-card__container margin-x-0">
+                        <div class="usa-card__header">
+                            <h4 class="usa-card__heading">Meet Mayor RFP Mart</h4>
+                        </div>
+                        <div class="usa-card__media usa-card__media--exdent">
+                            <div class="usa-card__img height-card">
+                                <img src="./assets/images/webp/card-city-mayor.webp" alt="Portrait of Mayor RFP Mart">
+                            </div>
+                        </div>
+                        <div class="usa-card__body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                                possimus similique nemo odit doloremque laudantium?
+                            </p>
+                        </div>
+                        <div class="usa-card__footer">
+                            <a href="departments-mayors-office.html"
+                                class="usa-link display-flex flex-row flex-align-center">
+                                Read More
+                                <svg class="usa-icon margin-left-05" aria-hidden="true" focusable="false" role="img">
+                                    <use href="./assets/images/sprite.svg#arrow_forward"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop:grid-col-7 tablet:grid-col-6">
+                    <div class="margin-bottom-4 border-bottom-05">
+                        <h2 class="font-heading-xl margin-top-0">
+                            Quick Links
+                        </h2>
+                    </div>
+
+                    <a href="departments-city-council.html"
+                        class="usa-button flex-justify-start height-7 width-full bg-primary-lighter hover:bg-primary-lighter hover:border-1px hover:border-black"
+                        style="background-image: url('./assets/images/usa-icons/navigate_next.svg'); background-repeat: no-repeat; background-position: right 1.25rem center;">
+                        <span class="font-body-md text-black">City Council</span>
+                    </a>
+
+                    <a href="departments-directory-accordion.html"
+                        class="usa-button flex-justify-start height-7 width-full margin-top-1 bg-primary-lighter hover:bg-primary-lighter hover:border-1px hover:border-black"
+                        style="background-image: url('./assets/images/usa-icons/navigate_next.svg'); background-repeat: no-repeat; background-position: right 1.25rem center;">
+                        <span class="font-body-md text-black">City Departments</span>
+                    </a>
+
+                    <a href="sample-pages-careers.html"
+                        class="usa-button flex-justify-start height-7 width-full margin-top-1 bg-primary-lighter hover:bg-primary-lighter hover:border-1px hover:border-black"
+                        style="background-image: url('./assets/images/usa-icons/navigate_next.svg'); background-repeat: no-repeat; background-position: right 1.25rem center;">
+                        <span class="font-body-md text-black">Careers</span>
+                    </a>
+
+                    <a href="departments-police.html"
+                        class="usa-button flex-justify-start height-7 width-full margin-top-1 bg-primary-lighter hover:bg-primary-lighter hover:border-1px hover:border-black"
+                        style="background-image: url('./assets/images/usa-icons/navigate_next.svg'); background-repeat: no-repeat; background-position: right 1.25rem center;">
+                        <span class="font-body-md text-black">Police</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="usa-section grid-container">
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-5 desktop:grid-col-5">
+                    <h2 class="font-heading-xl">
+                        Our Mission
+                    </h2>
+                </div>
+                <div class="usa-prose tablet:grid-col-7 desktop:grid-col-7">
+                    <p>
+                        Our mission is to foster a safe, vibrant, and inclusive community.
+                        We deliver essential services, support economic opportunity, and
+                        protect our natural and public spaces.
+                    </p>
+                    <p>
+                        We work in partnership with residents and local organizations to
+                        strengthen neighborhoods, maintain reliable infrastructure, and
+                        plan for a sustainable future.
+                    </p>
+                    <p>
+                        Our Goals:
+                    </p>
+                    <ul class="usa-list">
+                        <li>Support community well-being</li>
+                        <li>Encourage civic participation</li>
+                        <li>Maintain strong infrastructure</li>
+                        <li>Promote economic stability</li>
+                        <li>Protect the environment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="usa-section grid-container">
+            <div class="margin-bottom-4 border-bottom-05">
+                <h2 class="font-heading-xl">
+                    Initiatives &amp; Programs
+                </h2>
+            </div>
+            <div class="grid-row grid-gap-1">
+                <div class="usa-card desktop:grid-col-5">
+                    <div class="usa-card__container display-flex position-relative flex-column flex-justify-center flex-align-center minh-card-lg text-center text-white hover:shadow-4"
+                        style="background-image: url('./assets/images/webp/bt-sustainable-infra.webp'); background-size: cover; background-position: center;">
+                        <div class="usa-card__header">
+                            <h4 class="usa-card__heading" id="sustainable-heading">
+                                Sustainable City Infrastructure Plan
+                            </h4>
+                        </div>
+
+                        <p class="">
+                            Long-term investment to modernize public infrastructure.
+                            Focused on reducing emissions, improving transit, building resilient utilities
+                        </p>
+
+                        <a href="#" class="display-block position-absolute top-0 left-0 width-full height-full z-200"
+                            aria-labelledby="sustainable-heading">
+                            <span class="usa-sr-only">Read more</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tablet:grid-col-12 desktop:grid-col-7">
+                    <ul class="usa-card-group grid-row grid-gap-1 flex-justify-center flex-align-center text-center">
+                        <li class="usa-card tablet:grid-col-6 height-card">
+                            <div class="usa-card__container display-flex flex-column flex-justify-center text-white hover:shadow-4"
+                                style="background-image: url('./assets/images/webp/bt-neighborhood-green-spaces.webp'); background-size: cover; background-position: center;">
+                                <div class="usa-card__header">
+                                    <h4 class="usa-card__heading" id="neighbor-heading">
+                                        Neighborhood Green Spaces Program
+                                    </h4>
+                                </div>
+
+                                <a href="#"
+                                    class="display-block position-absolute top-0 left-0 width-full height-full z-200"
+                                    aria-labelledby="neighbor-heading">
+                                    <span class="usa-sr-only">Read more</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="usa-card tablet:grid-col-6 height-card">
+                            <div class="usa-card__container display-flex flex-column flex-justify-center text-white hover:shadow-4"
+                                style="background-image: url('./assets/images/webp/bt-affordable-housing.webp'); background-size: cover; background-position: center;">
+                                <a href="#"
+                                    class="display-block position-absolute top-0 left-0 width-full height-full z-200">
+                                    <span class="usa-sr-only">Read more about Affordable Housing Support</span>
+                                </a>
+                                <div class="usa-card__header">
+                                    <h4 class="usa-card__heading" id="affordable-heading">
+                                        Affordable Housing Support
+                                    </h4>
+                                </div>
+                                <a href="#"
+                                    class="display-block position-absolute top-0 left-0 width-full height-full z-200"
+                                    aria-labelledby="affordable-heading">
+                                    <span class="usa-sr-only">Read more</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="usa-card tablet:grid-col-6 height-card">
+                            <div class="usa-card__container display-flex flex-column flex-justify-center text-white hover:shadow-4"
+                                style="background-image: url('./assets/images/webp/bt-small-business-growth.webp'); background-size: cover; background-position: center;">
+
+                                <div class="usa-card__header">
+                                    <h4 class="usa-card__heading" id="small-business-heading">
+                                        Small Business Growth Assistance
+                                    </h4>
+                                </div>
+                                <a href="#"
+                                    class="display-block position-absolute top-0 left-0 width-full height-full z-200"
+                                    aria-labelledby="small-business-heading">
+                                    <span class="usa-sr-only">Read more</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="usa-card tablet:grid-col-6 height-card">
+                            <div class="usa-card__container display-flex flex-column flex-justify-center text-white hover:shadow-4"
+                                style="background-image: url('./assets/images/webp/bt-clean-mobility.webp'); background-size: cover; background-position: center;">
+
+                                <div class="usa-card__header">
+                                    <h4 class="usa-card__heading" id="clean-heading">
+                                        Clean Mobility Pilot
+                                    </h4>
+                                </div>
+                                <a href="#"
+                                    class="display-block position-absolute top-0 left-0 width-full height-full z-200"
+                                    aria-labelledby="clean-heading">
+                                    <span class="usa-sr-only">Read more</span>
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#"
+                    class="usa-button usa-button--outline width-full margin-x-0 hover:bg-primary-dark hover:text-white">
+                    View All Initiatives &amp; Programs
+                </a>
+            </div>
+        </section>
+
+        <section class="grid-container usa-section">
+            <div class="grid-row grid-gap-4">
+                <div class="tablet:grid-col-6 desktop:grid-col-6">
+                    <div class="margin-bottom-4 border-bottom-05">
+                        <h2 class="font-heading-xl">
+                            Latest News
+                        </h2>
+                    </div>
+                    <ul class="usa-collection">
+                        <li class="usa-collection__item margin-top-0 padding-top-0 border-0">
+                            <div class="usa-collection__calendar-date">
+                                <time datetime="2020-09-30T12:00:00+01:00"><span
+                                        class="usa-collection__calendar-date-month">SEP</span>
+                                    <span class="usa-collection__calendar-date-day">30</span></time>
+                            </div>
+
+                            <div class="usa-collection__body">
+                                <h4 class="usa-collection__heading">
+                                    <a class="usa-link"
+                                        href="https://trumpadministration.archives.performance.gov/presidents-winners-press-release/">Gears
+                                        of Government President’s Award winners</a>
+                                </h4>
+                                <p class="usa-collection__description text-base">
+                                    by John Doe
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="usa-collection__item border-0">
+                            <div class="usa-collection__calendar-date">
+                                <time datetime="2020-09-30T12:00:00+01:00"><span
+                                        class="usa-collection__calendar-date-month">SEP</span>
+                                    <span class="usa-collection__calendar-date-day">30</span></time>
+                            </div>
+
+                            <div class="usa-collection__body">
+                                <h4 class="usa-collection__heading">
+                                    <a class="usa-link"
+                                        href="https://trumpadministration.archives.performance.gov/presidents-winners-press-release/">Gears
+                                        of Government President’s Award winners</a>
+                                </h4>
+                                <p class="usa-collection__description text-base">
+                                    by John Doe
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="usa-collection__item border-0">
+                            <div class="usa-collection__calendar-date">
+                                <time datetime="2020-09-30T12:00:00+01:00"><span
+                                        class="usa-collection__calendar-date-month">SEP</span>
+                                    <span class="usa-collection__calendar-date-day">30</span></time>
+                            </div>
+
+                            <div class="usa-collection__body">
+                                <h4 class="usa-collection__heading">
+                                    <a class="usa-link"
+                                        href="https://trumpadministration.archives.performance.gov/presidents-winners-press-release/">Gears
+                                        of Government President’s Award winners</a>
+                                </h4>
+                                <p class="usa-collection__description text-base">
+                                    by John Doe
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="sample-pages-blog-list.html"
+                        class="usa-button usa-button--outline width-full margin-x-0 hover:bg-primary-dark hover:text-white">
+                        View All News
+                    </a>
+                </div>
+
+                <div class="tablet:grid-col-6 desktop:grid-col-6">
+                    <div class="margin-bottom-4 border-bottom-05">
+                        <h2 class="font-heading-xl">
+                            Upcoming Events
+                        </h2>
+                    </div>
+                    <ul class="usa-collection">
+                        <li class="usa-collection__item margin-top-0 padding-top-0 border-0">
+                            <div class="usa-collection__calendar-date border-right-1px">
+                                <time datetime="2020-09-30T12:00:00+01:00" class="text-center">
+                                    <p class="font-body-2xs margin-0 line-height-sans-1">
+                                        SEP
+                                    </p>
+                                    <h4 class="font-heading-2xl margin-0">
+                                        21
+                                    </h4>
+                                    <p class="font-body-2xs margin-0 line-height-sans-1">
+                                        2025
+                                    </p>
+                                </time>
+                            </div>
+
+                            <div class="usa-collection__body">
+                                <p class="font-body-2xs margin-0 text-base line-height-sans-1">
+                                    Monday, 11:20 AM
+                                </p>
+                                <h4 class="usa-collection__heading text-italic margin-top-1">
+                                    Public Forum
+                                </h4>
+                                <p class="font-body-2xs text-base line-height-sans-1">
+                                    Albert Hall
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="usa-collection__item border-0">
+                            <div class="usa-collection__calendar-date border-right-1px">
+                                <time datetime="2020-09-30T12:00:00+01:00" class="text-center">
+                                    <p class="font-body-2xs margin-0 line-height-sans-1">
+                                        SEP
+                                    </p>
+                                    <h4 class="font-heading-2xl margin-0">
+                                        21
+                                    </h4>
+                                    <p class="font-body-2xs margin-0 line-height-sans-1">
+                                        2025
+                                    </p>
+                                </time>
+                            </div>
+
+                            <div class="usa-collection__body">
+                                <p class="font-body-2xs margin-0 text-base line-height-sans-1">
+                                    Monday, 11:20 AM
+                                </p>
+                                <h4 class="usa-collection__heading text-italic margin-top-1">
+                                    Public Forum
+                                </h4>
+                                <p class="font-body-2xs text-base line-height-sans-1">
+                                    Albert Hall
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="usa-collection__item border-0">
+                            <div class="usa-collection__calendar-date border-right-1px">
+                                <time datetime="2020-09-30T12:00:00+01:00" class="text-center">
+                                    <p class="font-body-2xs margin-0 line-height-sans-1">
+                                        SEP
+                                    </p>
+                                    <h4 class="font-heading-2xl margin-0">
+                                        21
+                                    </h4>
+                                    <p class="font-body-2xs margin-0 line-height-sans-1">
+                                        2025
+                                    </p>
+                                </time>
+                            </div>
+
+                            <div class="usa-collection__body">
+                                <p class="font-body-2xs margin-0 text-base line-height-sans-1">
+                                    Monday, 11:20 AM
+                                </p>
+                                <h4 class="usa-collection__heading text-italic margin-top-1">
+                                    Public Forum
+                                </h4>
+                                <p class="font-body-2xs text-base line-height-sans-1">
+                                    Albert Hall
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="sample-pages-events-list.html"
+                        class="usa-button usa-button--outline width-full margin-x-0 hover:bg-primary-dark hover:text-white">
+                        View All Events
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="usa-footer usa-footer--big">
+        <div class="usa-footer__primary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-8">
+                        <nav class="usa-footer__nav" aria-label="Footer navigation,,">
+                            <div class="grid-row grid-gap-4">
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section
+                                        class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">Topic</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link that&#039;s a bit
+                                                    longer than most
+                                                    of the others</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section
+                                        class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">Topic</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link that&#039;s pretty
+                                                    long</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section
+                                        class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">Topic</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section
+                                        class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">Topic</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                            <li class="usa-footer__secondary-link">
+                                                <a href="javascript:void(0);">Secondary link</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tablet:grid-col-4">
+                        <div class="usa-sign-up">
+                            <h3 class="usa-sign-up__heading">Sign up</h3>
+                            <form class="usa-form">
+                                <label class="usa-label" for="email" id="">Your email address</label>
+                                <input class="usa-input" id="email" name="email" type="email" autocomplete="email" />
+                                <button class="usa-button" type="submit">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="usa-footer__secondary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+                        <div class="mobile-lg:grid-col-auto">
+                            <img class="usa-footer__logo-img" src="./assets/img/logo-img.png" alt="" />
+                        </div>
+                        <div class="mobile-lg:grid-col-auto">
+                            <p class="usa-footer__logo-heading">Name of Agency</p>
+                        </div>
+                    </div>
+                    <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                        <div class="usa-footer__social-links grid-row grid-gap-1">
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="javascript:void(0);"><img class="usa-social-link__icon"
+                                        src="./assets/img/usa-icons/facebook.svg" alt="Facebook" /></a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="javascript:void(0);"><img class="usa-social-link__icon"
+                                        src="./assets/img/usa-icons/twitter.svg" alt="Twitter" /></a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="javascript:void(0);"><img class="usa-social-link__icon"
+                                        src="./assets/img/usa-icons/youtube.svg" alt="YouTube" /></a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="javascript:void(0);"><img class="usa-social-link__icon"
+                                        src="./assets/img/usa-icons/instagram.svg" alt="Instagram" /></a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="javascript:void(0);"><img class="usa-social-link__icon"
+                                        src="./assets/img/usa-icons/rss_feed.svg" alt="RSS" /></a>
+                            </div>
+                        </div>
+                        <p class="usa-footer__contact-heading">
+                            Agency Contact Center
+                        </p>
+                        <address class="usa-footer__address">
+                            <div class="usa-footer__contact-info grid-row grid-gap">
+                                <div class="grid-col-auto">
+                                    <a href="tel:1-800-555-5555">(800) 555-GOVT</a>
+                                </div>
+                                <div class="grid-col-auto">
+                                    <a href="mailto:info@agency.gov">info@agency.gov</a>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- USWDS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.8.0/dist/js/uswds.min.js"></script>
+</body>
+
+</html>
